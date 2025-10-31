@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game-area, .chat-area {
+    width: 450px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.board {
+    width: 400px;
+    margin-top: 15px;
+}
+
+.game-controls {
+    margin-top: 10px;
+}
+
+#chatBox {
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: scroll;
+    background: #fafafa;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+    color: blue;
+}
+
+.bot-message {
+    text-align: left;
+    color: #333;
+}
