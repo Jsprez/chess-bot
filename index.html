@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess-GPT</title>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Mon Chatbot Expert en Échecs</h1>
+
+    <div class="container">
+        <div class="game-area">
+            <h3>Jouez contre l'Expert</h3>
+            <div id="boardGame" class="board"></div>
+            <div class="game-controls">
+                <label for="difficulty">Difficulté :</label>
+                <select id="difficulty">
+                    <option value="5">Facile</option>
+                    <option value="10">Moyen</option>
+                    <option value="20">Expert</option>
+                </select>
+                <button id="newGameButton">Nouvelle Partie</button>
+            </div>
+            <p>Status : <span id="status"></span></p>
+        </div>
+
+        <div class="chat-area">
+            <h3>Posez-moi une question</h3>
+            <div id="chatBox">
+                <p class="bot-message">Bonjour ! Posez-moi une question sur les échecs (ex: "Ruy Lopez", "mat du couloir").</p>
+            </div>
+            <input type="text" id="userInput" placeholder="Tapez votre question...">
+            <button id="sendButton">Envoyer</button>
+            
+            <h4>Position d'explication :</h4>
+            <div id="boardExplanation" class="board"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
